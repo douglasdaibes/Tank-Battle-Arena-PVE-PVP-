@@ -18,11 +18,22 @@ Integrantes Grupo:
 - Atualização de status dos tanques após cada batalha.
 - Menu interativo para escolher modos de jogo e listar status dos tanques.
 - Script SQL para popular o banco de dados com tanques.
-
-## Rodando o Script SQL
-### Antes de rodar o jogo, **execute o script `battle_tanks.sql` dentro da pasta `database`** para criar a tabela `Tanks` e popular os tanques no banco de dados.
+  
 ---
 
+## Configuração do Banco de Dados
+
+Antes de rodar o projeto, verifique o usuário e a senha do MySQL no arquivo `Conexao.java`.  
+O padrão é:
+
+- Usuário: root  
+- Senha: [sua senha local]
+
+Se no seu computador o MySQL usar outro usuário ou senha, altere `Conexao.java` para refletir isso.  
+
+Além disso, rode o script `battle_tanks.sql` dentro da pasta `database` para criar o banco e popular os tanques.
+
+---
 ## Tecnologias utilizadas
 - Java 17
 - Maven
